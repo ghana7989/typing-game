@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
-      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Speed Typer</title>
-  </head>
-  <body>
-    <button id="settings-btn" class="settings-btn">
-      <i class="fas fa-cog"></i>
-    </button>
 
-    <div id="settings" class="settings">
-      <form id="settings-form">
-        <div>
-          <label for="difficulty">Difficulty</label>
-          <select id="difficulty">
-            <option value="easy">Easy</option>
-            <option value="medium">Medium</option>
-            <option value="hard">Hard</option>
-          </select>
-        </div>
-      </form>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <div class="container">
-      <h2>👩‍💻 Speed Typer 👨‍💻</h2>
-      <small>Type the following:</small>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Speed Typer</title>
+</head>
 
-      <h1 id="word"></h1>
+<body>
+  <button id="settings-btn" class="settings-btn">
+    <i class="fas fa-cog"></i>
+  </button>
 
-      <input
-        type="text"
-        id="text"
-        autocomplete="off"
-        placeholder="Type the word here..."
-      />
+  <div id="settings" class="settings">
+    <form id="settings-form">
+      <div>
+        <label for="difficulty">Difficulty</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </form>
+  </div>
 
-      <p class="time-container">Time left: <span id="time">10s</span></p>
+  <div class="container">
+    <h2>👩‍💻 Speed Typer 👨‍💻</h2>
+    <small>Type the following:</small>
 
-      <p class="score-container">Score: <span id="score">0</span></p>
+    <h1 id="word"></h1>
 
-      <div id="end-game-container" class="end-game-container"></div>
-    </div>
+    <input type="text" id="text" autocomplete="off" placeholder="Type the word here..." />
 
-    <script src="script.js"></script>
-  </body>
+    <p class="time-container">Time left: <span id="time">15 s</span></p>
+
+    <p class="score-container">Score: <span id="score">0</span></p>
+
+    <div id="end-game-container" class="end-game-container"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"
+    integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA=="
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
