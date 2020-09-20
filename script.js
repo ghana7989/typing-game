@@ -46,7 +46,7 @@ difficultySelect.value = difficulty
 
 // Generates Random word
 function getRandomWord() {
-  return words[Math.floor(Math.random() * words.length) - 1]
+  return words[Math.floor(Math.random() * words.length)]
 
 }
 
